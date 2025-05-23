@@ -26,4 +26,4 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 sudo sysctl -w vm.overcommit_memory=1
 
 sudo systemctl start docker
-sudo docker pull ghcr.io/wowdogemonster/nockchain-miner:latest
+sudo docker pull ghcr.io/cncxx0755/nockchain-miner:latest
