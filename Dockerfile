@@ -10,9 +10,9 @@ RUN git clone https://github.com/zorp-corp/nockchain.git
 
 WORKDIR nockchain
 
-RUN sed -i "s|^export MINING_PUBKEY .=.*$|export MINING_PUBKEY ?= 2yxpbfDQmM884oq2xsYEmQN1ubr7CFEqQAomvAsnfAahHbyJwgn4BzyJxFmJrC2kemWfiK9YBXShzJMULkMzq1Hyb6GLp9Mp1P8nqopq4ZCzEBTKNPfKstAwHpZrgYKULV7G|" Makefile
+RUN sed -i "s|^export MINING_PUBKEY .=.*$|export MINING_PUBKEY ?= 3t7fLYT6vwH8jqbGFQNYxUYeCJivwHr5KfiF4Vv6dztQB1fBD6xnkM2x7VnfYf38BzbyyCu7omKWhQX5mNbHBt7uRPX9H4xSh8KEJWi2KsgfB9Xjk8M8VrYRCJxKep58sWDk|" Makefile
 RUN mv .env_example .env
-RUN sed -i "s|^MINING_PUBKEY=.*$|MINING_PUBKEY=2yxpbfDQmM884oq2xsYEmQN1ubr7CFEqQAomvAsnfAahHbyJwgn4BzyJxFmJrC2kemWfiK9YBXShzJMULkMzq1Hyb6GLp9Mp1P8nqopq4ZCzEBTKNPfKstAwHpZrgYKULV7G|" .env
+RUN sed -i "s|^MINING_PUBKEY=.*$|MINING_PUBKEY=3t7fLYT6vwH8jqbGFQNYxUYeCJivwHr5KfiF4Vv6dztQB1fBD6xnkM2x7VnfYf38BzbyyCu7omKWhQX5mNbHBt7uRPX9H4xSh8KEJWi2KsgfB9Xjk8M8VrYRCJxKep58sWDk|" .env
 
 RUN make install-hoonc
 RUN make build
